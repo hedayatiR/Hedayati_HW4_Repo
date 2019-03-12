@@ -38,4 +38,13 @@ public class Encryption {
         return output;
     }
 	// ----------------------------------------------------------
+	public static void main(String[] args) {
+        Encryption encryptObj = new Encryption();
+        encryptObj.getCode();
+        encryptObj.getMessage();
+        System.out.println();
+        System.out.println("Final Encrypted message:");
+        System.out.println(encryptObj.encryptAll());
+    }
+	// ----------------------------------------------------------
 }
