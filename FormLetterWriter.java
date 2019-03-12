@@ -21,5 +21,17 @@ public class FormLetterWriter {
         this.letterBody = input.next();
     }
     //------------------------------------------------------------------
+	public static void main(String[] args) {
+        FormLetterWriter letter = new FormLetterWriter();
+        //letter.getBody();
+        // salute 1
+        letter.displaySalutation("Hedayati");
+        letter.displayBody();
+        // salute 2
+        System.out.println();
+        letter.displaySalutation("Reza", "Hedayati");
+        letter.displayBody();
+    }
+	//------------------------------------------------------------------
     
 }
