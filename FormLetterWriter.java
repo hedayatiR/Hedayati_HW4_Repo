@@ -11,4 +11,15 @@ public class FormLetterWriter {
         System.out.println("Dear " + firstName + " " + lastName);
     }
     //------------------------------------------------------------------
+	public void displayBody(){
+        System.out.println(letterBody);
+    }
+    //------------------------------------------------------------------
+    public void getBody(){
+        System.out.println("Enter body of letter:");
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        this.letterBody = input.next();
+    }
+    //------------------------------------------------------------------
+    
 }
