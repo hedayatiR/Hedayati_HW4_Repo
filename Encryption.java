@@ -17,4 +17,25 @@ public class Encryption {
         Scanner input = new Scanner(System.in).useDelimiter("\n");
         this.message = input.next();
     }
+	// ----------------------------------------------------------
+	public char encrypt(char in) {
+        int charCode = (int) in;
+        charCode += code;
+        return (char)charCode;
+    }
+    // ----------------------------------------------------------
+    public String encryptAll() {
+        String output = "";
+        char tmpChar;
+        for (int i = 0; i < message.length(); i++) {
+            if (message.charAt(i) == ' ') {
+                output += ' ';
+                continue;
+            }
+            tmpChar = encrypt(message.charAt(i));
+            output += tmpChar;
+        }
+        return output;
+    }
+	// ----------------------------------------------------------
 }
